@@ -1,6 +1,6 @@
-import { readFileSync } from 'fs';
+import { readFileSync } from 'fs'
 
-const lines: string[] = readFileSync('./inputs/01.txt', 'utf-8').split('\n');
+const lines: string[] = readFileSync('./inputs/01.txt', 'utf-8').split('\n')
 
 const max = 99 + 1 // Add one because we have 0-99 = 100 steps
 let currPos = 50 // Dial starts by pointing at 50
@@ -31,7 +31,7 @@ for (let i = 0; i < lines.length; i++) {
       }
     }
     if (currPos === 0) {
-      clicks++;
+      clicks++
     }
   } else {
     console.warn(`Line ${i} (${lines[i]}) was skipped.`)
